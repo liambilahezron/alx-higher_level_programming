@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-# 5-variable_load.py
+import hidden_4
 
-if __name__ == "__main__":
-    """Print the value of variable a from variable_load_5."""
-    from variable_load_5 import a
+if __name__ == '__main__':
+    def_names = dir(hidden_4)
 
-    print(a)
+    for i in range(len(def_names)):
+        if def_names[i][:2] != '__':
+            print(def_names[i])
